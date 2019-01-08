@@ -9,8 +9,7 @@
 for sample in CD8_WT CD8_KO;
 do
 module load bowtie2/2.2.6
-bowtie2 -x "/work/IshikawaU/tsunghan/mm10/Sequence/Bowtie2Index/genome" -U ${sample}.fastq 
--S ${sample}.sam
+bowtie2 -x "/work/IshikawaU/tsunghan/mm10/Sequence/Bowtie2Index/genome" -U ${sample}.fastq -S ${sample}.sam
 done
 
 for sample in CD8_WT CD8_KO; do
